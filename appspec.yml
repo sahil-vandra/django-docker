@@ -1,18 +1,18 @@
 version: 0.0
 os: linux
 files:
- - source: /django_project/
-   destination: /home/ec2-user/django_project
- - source: /nginx/
-   destination: /home/ec2-user/nginx
- - source: /scripts/
-   destination: /home/ec2-user/scripts 
  - source: /
-   destination: /home/ec2-user/docker-compose.yml 
- - source: /
-   destination: /home/ec2-user/Dockerfile 
- - source: /
-   destination: /home/ec2-user/entrypoint.sh 
+   destination: /home/ec2-user
+#  - source: /nginx/
+#    destination: /home/ec2-user/nginx
+#  - source: /scripts/
+#    destination: /home/ec2-user/scripts 
+#  - source: /
+#    destination: /home/ec2-user/docker-compose.yml 
+#  - source: /
+#    destination: /home/ec2-user/Dockerfile 
+#  - source: /
+#    destination: /home/ec2-user/entrypoint.sh 
 
 permissions:
   - object: /home/ec2-user/django_project/manage.py
