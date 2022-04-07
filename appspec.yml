@@ -6,7 +6,7 @@ files:
  - source: /manage.py
    destination: /home/ec2-user/django_project
 permissions:
-  - object: /home/ec2-user/manage.py
+  - object: /home/ec2-user/django_project/manage.py
     owner: root
     # mode: 644(read and write permissions ), 4755(gives full control permissions)
     mode: 4755
