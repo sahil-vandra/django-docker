@@ -1,0 +1,2 @@
+ls
+docker-compose up
