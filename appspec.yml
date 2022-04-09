@@ -1,26 +1,17 @@
 version: 0.0
 os: linux
+
 files:
  - source: /
    destination: /home/ec2-user
-#  - source: /nginx/
-#    destination: /home/ec2-user/nginx
-#  - source: /scripts/
-#    destination: /home/ec2-user/scripts 
-#  - source: /
-#    destination: /home/ec2-user/docker-compose.yml 
-#  - source: /
-#    destination: /home/ec2-user/Dockerfile 
-#  - source: /
-#    destination: /home/ec2-user/entrypoint.sh 
 
 permissions:
   - object: /home/ec2-user/django_project/manage.py
     owner: root
-    # mode: 644(read and write permissions ), 4755(gives full control permissions)
     mode: 4755
     type:
       - file
+
 hooks:
   BeforeInstall:
     - location: scripts/clean_instance.sh

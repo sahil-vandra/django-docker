@@ -11,4 +11,3 @@ WORKDIR /app
 
 COPY ./entrypoint.sh /
 ENTRYPOINT ["sh", "/entrypoint.sh"]
-
